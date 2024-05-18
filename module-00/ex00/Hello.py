@@ -14,8 +14,6 @@ ft_tuple = tuple(tmp_list)
 ft_set.remove("tutu!")
 ft_set.add("Paris!")
 
-# ft_dict.update("Hello", "42Paris!")
-# ft_dict.pop("Hello")
 ft_dict["Hello"] = "42Paris!"
 
 print(ft_list)
