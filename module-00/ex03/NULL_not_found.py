@@ -20,6 +20,6 @@ def NULL_not_found(object: any) -> int:
 
     print(f"{title} : {object} {type_of_obj}")
     return 0
-  except Exception as e:
+  except:
     print("Type not Found")
     return 1
