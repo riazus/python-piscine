@@ -18,20 +18,21 @@ def main():
     """
     Driver main function
     """
-    if (len(argv) != 2):
-        print("AssertionError: the arguments are bad")
-        return
+    try:
+        if (len(argv) != 2):
+            raise AssertionError("The arguments are bad.")
 
-    capitalized = argv[1].upper()
-    morse_parts = []
+        capitalized = argv[1].upper()
+        morse_parts = []
 
-    for ch in capitalized:
-        if not ch.isalnum() and not ch.isspace():
-            print("AssertionError: the arguments are bad")
-            return
-        morse_parts.append(NESTED_MORSE.get(ch))
+        for ch in capitalized:
+            if not ch.isalnum() and not ch.isspace():
+                raise AssertionError("The arguments are bad.")
+            morse_parts.append(NESTED_MORSE.get(ch))
 
-    print("".join(morse_parts))
+        print("".join(morse_parts))
+    except AssertionError as err:
+        print("\033[31m", AssertionError.__name__ + ":", err, "\033[0m")
 
 
 if __name__ == "__main__":

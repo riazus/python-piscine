@@ -3,17 +3,20 @@ from ft_filter import ft_filter
 
 
 def main():
-    argc = len(argv)
-    if argc != 3 or argv[1].isalnum() or not argv[2].isdigit():
-        print("AssertionError: the arguments are bad")
-        return
+    try:
 
-    text = argv[1]
-    num = int(argv[2])
-    words = text.split()
+        argc = len(argv)
+        if argc != 3 or argv[1].isalnum() or not argv[2].isdigit():
+            raise AssertionError("The arguments are bad.")
 
-    res = list(ft_filter(lambda x: len(x) > num, words))
-    print(res)
+        text = argv[1]
+        num = int(argv[2])
+        words = text.split()
+
+        res = list(ft_filter(lambda x: len(x) > num, words))
+        print(res)
+    except AssertionError as err:
+        print("\033[31m", AssertionError.__name__ + ":", err, "\033[0m")
 
 
 if __name__ == "__main__":
