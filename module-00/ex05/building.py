@@ -2,6 +2,9 @@ import sys as s
 
 
 def main():
+    """
+    Driver main function
+    """
     argc = len(s.argv)
     upper_letters = 0
     lower_letters = 0
