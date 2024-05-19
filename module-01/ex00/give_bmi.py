@@ -6,7 +6,7 @@ def give_bmi(height: list[int | float],
     weight / height ** 2
     """
     if len(height) != len(weight):
-        raise AssertionError("args are invalid")
+        raise AssertionError("Args are invalid.")
 
     res = list()
     i = 0
@@ -15,7 +15,7 @@ def give_bmi(height: list[int | float],
         validHeight = isinstance(height[i], (int, float))
 
         if not validWeight or not validHeight:
-            raise AssertionError("args are invalid")
+            raise AssertionError("Args are invalid.")
         res.append(weight[i] / (height[i] ** 2))
         i += 1
 

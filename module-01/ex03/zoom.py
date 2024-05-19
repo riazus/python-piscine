@@ -8,8 +8,6 @@ import matplotlib.pyplot as plt
 def ft_zoom():
     try:
         path = "animal.jpeg"
-        if not path.lower().endswith(("jpg", "jpeg")):
-            raise AssertionError("Only JPG and JPEG formats are supported.")
         if not os.path.exists(path):
             raise AssertionError("File not found:", path)
         image = Image.open(path)
