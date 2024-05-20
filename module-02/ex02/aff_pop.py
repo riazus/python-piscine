@@ -4,6 +4,9 @@ from matplotlib.ticker import FuncFormatter
 
 
 def aff_pop():
+    """
+    Plots population projections for two specified countries over the years.
+    """
     try:
         path = "population_total.csv"
         campus = "France"

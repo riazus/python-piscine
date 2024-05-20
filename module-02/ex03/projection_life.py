@@ -3,6 +3,10 @@ import matplotlib.pyplot as plt
 
 
 def projection_life():
+    """
+    Plots a scatter plot of GDP per capita against
+    life expectancy for a specified year.
+    """
     try:
         gdp_path = "income_per_person_gdppercapita_ppp_inflation_adjusted.csv"
         population_path = "life_expectancy_years.csv"
