@@ -31,8 +31,8 @@ setup(
     description='A sample test package',
     author='riazus',
     author_email='jannabel@student.42.fr',
-    url='https://github.com/riazus/python-piscine/\
-module-00/ex09/ft_package',
+    url='https://github.com/riazus/python-piscine\
+        /tree/master/module-00/ex09/ft_package',
     packages=find_packages(),
     classifiers=[
         'License :: OSI Approved :: MIT License',

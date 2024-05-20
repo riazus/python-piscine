@@ -3,8 +3,10 @@ from ft_filter import ft_filter
 
 
 def main():
+    """
+    Driver main function
+    """
     try:
-
         argc = len(argv)
         if argc != 3 or argv[1].isalnum() or not argv[2].isdigit():
             raise AssertionError("The arguments are bad.")

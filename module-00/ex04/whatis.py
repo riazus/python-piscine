@@ -2,7 +2,7 @@ import sys as s
 
 try:
     if (len(s.argv) != 2):
-        raise AssertionError("More than one argument is provided.")
+        raise AssertionError("Arguments count is not correct.")
     elif (not s.argv[1].lstrip('-').isdigit()):
         raise AssertionError("Argument is not an integer.")
 
