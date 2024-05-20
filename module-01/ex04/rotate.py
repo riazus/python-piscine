@@ -6,6 +6,15 @@ import matplotlib.pyplot as plt
 
 
 def transpose_image(image):
+    """
+    Transpose an image by swapping its rows and columns.
+
+    Args:
+        image (PIL.Image.Image): The input image to be transposed.
+
+    Returns:
+        PIL.Image.Image: The transposed image with rows and columns swapped.
+    """
     width, height = image.size
     transposed_image = Image.new("RGB", (height, width))
 
@@ -18,6 +27,15 @@ def transpose_image(image):
 
 
 def crop_image(image):
+    """
+    Crop the input image to a square shape centered in the original image.
+
+    Args:
+        image (PIL.Image.Image): The input image to be cropped.
+
+    Returns:
+        PIL.Image.Image: The cropped square image.
+    """
     crp_size = min(image.width, image.height)
     crp_left = (image.width - crp_size) // 2
     crp_top = (image.height - crp_size) // 2
@@ -28,6 +46,9 @@ def crop_image(image):
 
 
 def ft_rotate():
+    """
+    Load an image, perform various transformations, and display the results.
+    """
     try:
         path = "animal.jpeg"
         if not os.path.exists(path):
@@ -59,6 +80,9 @@ def ft_rotate():
 
 
 def main():
+    """
+    Driver function
+    """
     ft_rotate()
 
 

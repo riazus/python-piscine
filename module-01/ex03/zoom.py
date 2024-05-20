@@ -6,6 +6,9 @@ import matplotlib.pyplot as plt
 
 
 def ft_zoom():
+    """
+    Load an image, perform a zoom operation by cropping, and display results.
+    """
     try:
         path = "animal.jpeg"
         if not os.path.exists(path):
