@@ -31,6 +31,7 @@ def aff_life():
 
 
 def main():
+    """Driver main function"""
     aff_life()
 
 

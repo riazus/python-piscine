@@ -37,6 +37,7 @@ def projection_life():
 
 
 def main():
+    """Driver main function"""
     projection_life()
 
 
